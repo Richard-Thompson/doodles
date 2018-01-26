@@ -1,8 +1,56 @@
 .hero-wrapper{
+    height:100vh;
     .hero-img{
-        background: url('http://i.vimeocdn.com/video/515023537_1280x720.jpg');
+        background: url('https://thumb1.shutterstock.com/display_pic_with_logo/1943648/523654960/stock-vector-vector-patchwork-pattern-vintage-decorative-elements-hand-drawn-background-indian-arabic-523654960.jpg');//http://4.bp.blogspot.com/-xhG0CP5zmDY/UEtz5UfV_eI/AAAAAAAAC_E/sY3CfYsgObs/s1600/Street+Wall+Art.jpg
         background-size: cover;
-        width:100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top:0;
+        right:0;
+        left:0;
+        z-index:-10;
         height:100vh;
+    }
+    .title-wrapper{
+        margin:0 auto;
+        position: absolute;
+        right:0;
+        left:0;
+        top:30%;
+        max-width: 1000px;
+        margin-top:20px;
+        padding-left:10px;
+        padding-right:10px;
+        .main-title{
+            background-color:rgba(black, 0.95);
+            text-align: center;
+            color:white;
+            font-size: 3rem;
+            max-width: 550px;
+        }
+        .tag-line{
+            background-color:rgba(black, 0.95);
+            color:white;
+            max-width: 550px;
+            font-size: 1.75rem;
+
+        }
+    }
+    .down-arrows-wrapper{
+        .down-arrows{
+            fill:black;
+            width:100px;
+            height:100px;
+            position: absolute;
+            margin:0 auto;
+            bottom: 5%;
+            left:0;
+            right:0;
+            transition: all 0.5s ease-in-out;
+        }
+        .down-arrows:hover {
+            bottom:4%;
+        }
+
     }
 }

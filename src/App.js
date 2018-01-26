@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import PageTransition from 'react-router-page-transition';
 import Home from './components/home/Home';
-
+import {polyfill} from 'smoothscroll-polyfill';
+polyfill();
 
 class App extends Component {
     render () {
