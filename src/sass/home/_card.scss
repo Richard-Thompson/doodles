@@ -1,0 +1,92 @@
+.box {
+    vertical-align: top;
+    margin-bottom:20px;
+    margin-right:30px;
+    padding:15px;
+    @media (min-width:400px){
+        max-width: 400px;
+    }
+    .card-wrapper {
+        opacity: 0;
+        height: 240px;
+        transition: all 700ms ease-in-out;
+        transform: translate3d(0,50px,0) scale(0.5);
+        position: relative;
+        .inner-card-wrapper{
+            display: flex;
+            flex-direction: row;
+            .icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:50%;
+                height:240px;
+                vertical-align: middle;
+                .circle{
+                    position: relative;
+                    width:150px;
+                    height:150px;
+                    border:2px solid #949494;
+                    border-radius: 50%;
+                    .circle-1{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -69px 0 0 -69px;
+                        width:138px;
+                        height:138px;
+                        border:3px solid #949494;
+                        border-radius: 50%;
+                        #shopping-cart {
+                            fill:#949494;
+                            position: absolute;
+                            left:0;
+                            right:0;
+                            margin:0 auto;
+                            top:22%;
+                            height:50%;
+                            width:50%;
+                        }
+                    }
+                }
+                
+            }
+            .icon-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .icon-title{
+                    font-size: 1.75rem;
+                    margin-top:10px;
+                    color:black;
+                }
+                .icon-sentence{
+                    font-size: 1rem;
+                    margin: 0 10px;
+                    color:#949494;
+
+                }
+            }
+        }
+      }
+  }
+
+  .box.appear{
+      margin-right:30px;
+    .card-wrapper {
+    opacity: 1;
+    display: block;
+    transform: translate3d(0,0,0);
+    }
+    .card-wrapper:after {
+        content: '';
+        font-family: Monaco, consolas, monospace;
+        font-size: 2vw;
+        color: white;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.7);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0);
+      }
+}      

@@ -1,0 +1,14 @@
+.home{
+    .card-section{
+        max-width: 1600px;
+        .row{
+            width:auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+}

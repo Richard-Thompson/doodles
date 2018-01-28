@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import Hero from './Hero';
 import Nav from '../nav/Nav';
+import Card from './Card';
+import Hand from '../../svg/write';
+import ShoppingCart from '../../svg/shopping-cart';
 
 class Home extends Component {
     constructor(props){
@@ -15,6 +18,13 @@ class Home extends Component {
                 <Nav />
                 <Hero handleClick={this.handleClick}/>
                 <div ref={node => this.something = node}> This is home </div>
+                <div className='card-section container'>
+                    <div className='row'>
+                        <Card col={'col-md-4'} icon={<ShoppingCart />} idx={300}/>
+                        <Card col={'col-md-4'} idx={400}/>
+                        <Card col={'col-md-4'} idx={500}/>
+                    </div>
+                </div>
             </div>
         )
     }
