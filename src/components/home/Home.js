@@ -4,6 +4,8 @@ import Nav from '../nav/Nav';
 import Card from './Card';
 import Hand from '../../svg/write';
 import ShoppingCart from '../../svg/shopping-cart';
+import Video from './Video';
+import Explore from './Explore';
 
 class Home extends Component {
     constructor(props){
@@ -23,8 +25,13 @@ class Home extends Component {
                         <Card col={'col-md-4'} icon={<ShoppingCart />} idx={300}/>
                         <Card col={'col-md-4'} idx={400}/>
                         <Card col={'col-md-4'} idx={500}/>
+                        <Card col={'col-md-4'} idx={100}/>
+                        <Card col={'col-md-4'} idx={400}/>
+                        <Card col={'col-md-4'} idx={500}/>
                     </div>
                 </div>
+                {/* <Video /> */}
+                <Explore />
             </div>
         )
     }

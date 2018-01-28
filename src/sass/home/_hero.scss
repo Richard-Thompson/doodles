@@ -1,15 +1,31 @@
 .hero-wrapper{
     height:75vh;
-    .hero-img{
-        background: url('https://thumb1.shutterstock.com/display_pic_with_logo/1943648/523654960/stock-vector-vector-patchwork-pattern-vintage-decorative-elements-hand-drawn-background-indian-arabic-523654960.jpg');//http://4.bp.blogspot.com/-xhG0CP5zmDY/UEtz5UfV_eI/AAAAAAAAC_E/sY3CfYsgObs/s1600/Street+Wall+Art.jpg
-        background-size: cover;
-        background-repeat: no-repeat;
+    // .hero-img{
+    //     background: url('https://thumb1.shutterstock.com/display_pic_with_logo/1943648/523654960/stock-vector-vector-patchwork-pattern-vintage-decorative-elements-hand-drawn-background-indian-arabic-523654960.jpg');//http://4.bp.blogspot.com/-xhG0CP5zmDY/UEtz5UfV_eI/AAAAAAAAC_E/sY3CfYsgObs/s1600/Street+Wall+Art.jpg
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     position: absolute;
+    //     top:0;
+    //     right:0;
+    //     left:0;
+    //     z-index:-10;
+    //     height:100vh;
+    // }
+    .fullscreen-bg{
         position: absolute;
-        top:0;
-        right:0;
-        left:0;
-        z-index:-10;
-        height:100vh;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+        .fullscreen-bg-video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
     }
     .title-wrapper{
         margin:0 auto;
@@ -22,14 +38,14 @@
         padding-left:10px;
         padding-right:10px;
         .main-title{
-            background-color:rgba(black, 0.95);
+            background-color:rgba(black, 0.7);
             text-align: center;
             color:white;
             font-size: 3rem;
             max-width: 550px;
         }
         .tag-line{
-            background-color:rgba(black, 0.95);
+            background-color:rgba(black, 0.7);
             color:white;
             max-width: 550px;
             font-size: 1.75rem;
