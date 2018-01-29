@@ -1,20 +1,23 @@
-.explore-wrapper{
-    background-color: rgb(240, 234, 234);
-    border-top: 2px solid rgba(196, 190, 190, 0.733);
-    border-bottom: 2px solid rgba(196, 190, 190, 0.733);
-    .small-triangle{
-
-    }
+.explore-wrapper{    
     .row{
-        padding:100px 0;
         .explore-text{
-
+            background-color: black;
+            .explore-title{
+                color:white;
+                padding:50px 0 15px 50px;
+            }
+            .explore-subheading{
+                color:white;
+                padding:15px 0 50px 50px;
+                @media (min-width:1199px){
+                    padding:15px 0 0 50px;
+                }
+            }
         }
         .type-of-art-section{
             padding:0;
             .section-link{
                 background-image: url('https://radicalwebdesign.co.uk/wp-content/uploads/2017/12/7.jpg');
-                border:3px solid black;
                 height: 0;
                 width: 100%;
                 padding-bottom: 75%;
