@@ -4,7 +4,6 @@ import Nav from '../nav/Nav';
 import Card from './Card';
 import Hand from '../../svg/write';
 import ShoppingCart from '../../svg/shopping-cart';
-import Video from './Video';
 import Explore from './Explore';
 
 class Home extends Component {
