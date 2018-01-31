@@ -5,6 +5,7 @@ import Card from './Card';
 import Hand from '../../svg/write';
 import ShoppingCart from '../../svg/shopping-cart';
 import Explore from './Explore';
+import Carousel from './Carousel';
 
 class Home extends Component {
     constructor(props){
@@ -29,8 +30,8 @@ class Home extends Component {
                         <Card col={'col-md-4'} idx={500}/>
                     </div>
                 </div>
-                {/* <Video /> */}
                 <Explore />
+                <Carousel />
             </div>
         )
     }
