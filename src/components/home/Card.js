@@ -24,8 +24,8 @@ class Card extends Component {
                             </div>
                         </div>
                         <div className='icon-text'>
-                            <h2 className='icon-title'>Buy Art</h2>
-                            <p className='icon-sentence'>Look for and buy new abstract doodles. Search through the categories to find your perfect doodle</p>
+                            <h2 className='icon-title'>{this.props.title}</h2>
+                            <p className='icon-sentence'>{this.props.sentence}</p>
                         </div>
                     </div>
                 </div>

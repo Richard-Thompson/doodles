@@ -15,6 +15,27 @@
         .inner-card-wrapper{
             display: flex;
             flex-direction: row;
+            &:hover{
+                .icon{
+                    .circle{
+                        .circle-1{
+                            border:3px solid black;
+                            svg{
+                                fill:black;
+                            }
+                        }
+
+                    }
+                }
+                .icon-text{
+                    .icon-title{
+                        color:black;
+                    }
+                    .icon-sentence{
+                        color:black;
+                    }
+                }
+            }
             .icon{
                 display: flex;
                 justify-content: center;
@@ -41,7 +62,7 @@
                         height:138px;
                         border:3px solid #949494;
                         border-radius: 50%;
-                        #shopping-cart {
+                        svg {
                             fill:#949494;
                             position: absolute;
                             left:0;
@@ -50,11 +71,15 @@
                             top:22%;
                             height:50%;
                             width:50%;
+                            line{
+                                stroke:#949494;
+                            }
                         }
                     }
                 }
                 
             }
+            
             .icon-text{
                 display: flex;
                 flex-direction: column;
@@ -63,7 +88,7 @@
                 .icon-title{
                     font-size: 1.75rem;
                     margin-top:10px;
-                    color:black;
+                    color:#949494;
                 }
                 .icon-sentence{
                     font-size: 1rem;
@@ -77,6 +102,7 @@
             }
         }
       }
+      
   }
 
   .box.appear{

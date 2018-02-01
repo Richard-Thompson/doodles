@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function ShoppingCart () {
 	return(
-<svg version="1.1" id="shopping-cart" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="446.853px" height="446.853px" viewBox="0 0 446.853 446.853"
+<svg version="1.1"  className='shopping-cart' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 446.853 446.853"
 	 xmlSpace="preserve">
 <g>
 	<path d={`M444.274,93.36c-2.558-3.666-6.674-5.932-11.145-6.123L155.942,75.289c-7.953-0.348-14.599,5.792-14.939,13.708
