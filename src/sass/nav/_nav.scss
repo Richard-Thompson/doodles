@@ -1,40 +1,33 @@
-.nav-wrapper{
-    height:25vh;
-    .title-nav-wrapper{
-        max-width: 1000px;
-        margin:0 auto;
-        -webkit-clip-path: polygon(12% 1%, 99% 1%, 91% 99%, 1% 98%);
-        clip-path: polygon(12% 1%, 99% 1%, 91% 99%, 1% 98%);
-        @media (max-width:874px){
-            clip-path: none;
-            -webkit-clip-path:none;
-        }
-        .title{
+.navbar{
+    background-color: transparent !important;
+    text-align: center;
+    width:80%;
+    padding:10px 0 10px 0;
+    margin-left:10vw;
+        .navbar-brand{
             color:white;
-            font-size: 4rem;
-            text-align: center;
-            background-color:rgba(0,0,0,0.95);
-           margin:0 auto;
+            font-size: 1.5rem;
         }
-        .author{
+        .navbar-toggler{
             color:white;
-            font-size: 2rem;
-            text-align: center;
-            margin-top:-2px;
-            background-color: rgba(0,0,0,0.95);;
-           margin-right:0 auto;
-           margin-left:0 auto;
-        }
-        .nav{
-            background-color: rgba(0,0,0, 0.95);;
-            text-align: center;
-            color:white;
-            margin:0 auto;
-            margin-top:5px;
-            .nav-item{
-                font-size: 1.5rem;
-                width:200px;
+            .navbar-toggler-icon{
+                color:white;
+                background-color: white;
             }
         }
+        .collapse.navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    margin:0 25px 0 25px;
+                    .nav-link{
+                        font-size: 1rem;
+                        color:white;    
+                    }
+                }
+                .nav-item:last-child{
+                    margin-right:0;
+                }
+            }
+        
     }
 }

@@ -1,5 +1,5 @@
 .hero-wrapper{
-    height:75vh;
+    height:88vh;
     // .hero-img{
     //     background: url('https://thumb1.shutterstock.com/display_pic_with_logo/1943648/523654960/stock-vector-vector-patchwork-pattern-vintage-decorative-elements-hand-drawn-background-indian-arabic-523654960.jpg');//http://4.bp.blogspot.com/-xhG0CP5zmDY/UEtz5UfV_eI/AAAAAAAAC_E/sY3CfYsgObs/s1600/Street+Wall+Art.jpg
     //     background-size: cover;
@@ -11,6 +11,17 @@
     //     z-index:-10;
     //     height:100vh;
     // }
+    .overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -99;
+        width:100%;
+        height:100vh;
+        background-color: rgba(0,0,0,0.6);
+    }
     .fullscreen-bg{
         position: absolute;
         top: 0;
@@ -28,36 +39,51 @@
             height:100%;
         }
     }
-    .title-wrapper{
-        margin:0 auto;
+    .title{
         position: absolute;
-        right:0;
+        top:38%;
+        left:10vw;
+        color: white;
+        font-size: 2rem;
+    }
+    .search-box{
+        position: absolute;
         left:0;
-        top:30%;
-        max-width: 1000px;
-        margin-top:20px;
-        padding-left:10px;
-        padding-right:10px;
-        .main-title{
-            background-color:rgba(black, 0.7);
-            text-align: center;
-            color:white;
-            font-size: 3rem;
-            max-width: 550px;
+        right:0;
+        margin:auto;
+        top:48%;
+        width:80%;
+        border-radius: 0.25rem;
+        .search-input{
+            height:4rem;
+            padding:1rem;
+            width:70%;
+            border:0 none;
+            background-color:white;
+            
         }
-        .tag-line{
-            background-color:rgba(black, 0.7);
+        .search-type{
+            background-color: white;
+            color:lightgray;
+            border:none;
+            border:0 none;
+            border-left:1px solid grey;
+            height:4rem;
+            width:15%;
+        }
+        .search-button{
+            background-color: rgba(0,0,0,0.6);
             color:white;
-            max-width: 550px;
-            font-size: 1.75rem;
-
+            border:none;
+            width:15%;
+            height:4rem;
         }
     }
     .down-arrows-wrapper{
-        .down-arrows{
-            fill:black;
-            width:100px;
-            height:100px;
+        #down-arrow{
+            fill:white;
+            width:50px;
+            height:50px;
             position: absolute;
             margin:0 auto;
             bottom: 5%;
@@ -65,7 +91,7 @@
             right:0;
             transition: all 0.5s ease-in-out;
         }
-        .down-arrows:hover {
+        #down-arrow:hover {
             bottom:4%;
         }
 

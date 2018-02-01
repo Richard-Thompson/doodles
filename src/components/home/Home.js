@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Hero from './Hero';
 import Nav from '../nav/Nav';
 import Card from './Card';
-import Hand from '../../svg/write';
 import ShoppingCart from '../../svg/shopping-cart';
 import Explore from './Explore';
 import Carousel from './Carousel';
