@@ -10,6 +10,7 @@ import Links from '../../svg/links';
 import QuestionAndAnswer from '../../svg/q&a';
 import Explore from './Explore';
 import Carousel from './Carousel';
+import Footer from '../footer/Footer';
 
 class Home extends Component {
     constructor(props){
@@ -36,6 +37,7 @@ class Home extends Component {
                 </div>
                 <Explore />
                 <Carousel />
+                <Footer />
             </div>
         )
     }

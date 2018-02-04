@@ -1,0 +1,81 @@
+.footer-wrapper{
+    background-color: black;
+    min-height:150px;
+    width:100%;
+    position: relative;
+    .footer-main-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding:0;
+        padding:20px 0 10px 0;
+        margin-bottom:0;
+        .nav-item{
+            margin:0 2% 0 2%;
+        }
+        .nav-item:first-child{
+            list-style-type: none;
+        }
+    }
+    .details{
+        .row{
+            padding:10px 0 20px 0;
+            .copyright{
+                padding:10px 0 10px 0;
+                .copyright-text{
+                    width:229px;
+                    display: table;
+                    margin:0 auto;
+                }
+            }
+            .contact-details{
+                padding:10px 0 10px 0;
+                .contact-details-inner-wrapper{
+                    width:229px;
+                    display: inline-block;
+                    display: table;
+                    margin:0 auto;
+                    .email{
+                        .svg-inline--fa{
+                            margin-right:0.5rem;
+                        }
+                    }
+                    .phone{
+                        .svg-inline--fa{
+                            text-align: center;
+                            margin-right:0.5rem;
+                        }
+                    }
+                }
+            }
+            .social-media{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;;
+                padding:10px 0 10px 50px;
+                .social-media-inner-wrapper{
+                    @media(max-width:576px){
+                        width:229px;
+                        display: inline-block;
+                        margin:0 auto;
+                    }
+                    .svg-inline--fa{
+                        font-size: 2rem;
+                        margin-right:0.75rem;
+                    }
+                }
+            }
+        }
+    }
+    .up-arrow{
+        position: absolute;
+        right:10px;
+        top:40px;
+        .svg-inline--fa{
+            font-size: 2rem;
+            color:white;
+        }
+    }
+}

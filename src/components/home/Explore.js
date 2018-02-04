@@ -17,16 +17,6 @@ class Explore extends Component {
                     <ExploreSection type={'Birds'} url={'https://i.pinimg.com/736x/bc/28/5c/bc285c237c7341447c4e0eb34482a4b0--feather-design-peacock-design.jpg'} />
                     <ExploreSection type={'Christmass'} url={'https://image.shutterstock.com/z/stock-vector-doodle-frame-frame-made-of-various-fir-branches-snowflakes-and-christmas-decoration-abstract-316773791.jpg'} />
                     <ExploreSection type={'Other'} url={'https://qph.ec.quoracdn.net/main-qimg-864ad9bb9d1e4ded4324f121cd076a37-c'} />
-                    <div className='type-of-art-section col-xl-3 col-md-4 col-sm-6'>
-                    <a className='section-link'></a>
-                        <div className='section-overlay'></div>
-                        {sectionOverlayCorners()}
-                    </div>
-                    <div className='type-of-art-section col-xl-3 col-md-4 col-sm-6'>
-                    <a className='section-link'></a>
-                        <div className='section-overlay'></div>
-                        {sectionOverlayCorners()}
-                    </div>
                 </div>
 
             </div>
