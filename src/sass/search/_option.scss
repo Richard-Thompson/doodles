@@ -1,0 +1,19 @@
+.type-option{
+    width:160px;
+    height:50px;
+    color: #949494;
+    text-align: center;
+    list-style-type: none;
+    background-color: transparent;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.active{
+    width:160px;
+    height:50px;
+    text-align: center;
+    list-style-type: none;
+    color:white;
+    background-color: #4BB543 !important;
+}

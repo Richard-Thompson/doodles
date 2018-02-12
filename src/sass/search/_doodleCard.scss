@@ -1,0 +1,28 @@
+.doodle-card{
+    width:100%;
+    border:2px solid blue;
+    color:#949494;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    @media(max-width:650px){
+        flex-direction: column;
+    }
+        .doodle-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:40%;
+            @media(max-width:650px){
+                width:100% !important;
+            }
+        }
+        .doodle-details{
+            width:60%;
+            padding-left:20px;
+            @media(max-width:650px){
+                width:100%;
+            }
+        }
+    
+}

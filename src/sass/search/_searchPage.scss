@@ -1,0 +1,97 @@
+.search-page-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    .search-section {
+        margin: 0 auto;
+        width: 90%;
+        h1 {
+            color: #949494;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+        form {
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            input {
+                width: 100%;
+                height: 50px;
+                font-size: 1.5rem;
+                background-color: #f0eeee;
+                border: none;
+            }
+        }
+        .lines-seperator {
+            height: 36px;
+            margin: 0 auto;
+            border-top: 1px solid #949494;
+            border-bottom: 1px solid #949494;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .down-arrow {
+                transform: rotate(180deg);
+            }
+            .down-arrow-wrapper {
+                width: 50px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                transition: all 0.5s linear;
+                .fa-chevron-circle-down {
+                    color: #949494;
+                    font-size: 2rem;
+                }
+            }
+        }
+        .search-options-wrapper {
+            width: 70%;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .buttons-enter {
+            height: 0px;
+            opacity: 0;
+        }
+        .buttons-enter.buttons-enter-active {
+            height: 90px;
+            opacity: 1;
+            transition: 700ms;
+        }
+        .buttons-leave {
+            opacity: 1;
+            height: 90px;
+        }
+        .buttons-leave.buttons-leave-active {
+            opacity: 0;
+            height: 0;
+            transition: 700ms;
+        }
+    }//search section end 
+    .search-options{
+        width:90%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .option{
+            background-color: #4BB543;
+            color:white;
+            width: 200px;
+            min-height:50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 15px;
+            margin:10px
+        }
+    }
+    .search-results {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        border: 2px solid green;
+    }
+}
