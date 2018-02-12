@@ -26,9 +26,9 @@ class PricingPage extends Component {
                 <div className='navbar-background'></div>
                 <h1 className='pricing-title'>Pricing</h1>
                     {this.state.pricingContent.map((item, i) => {
-                        let time = i*50
+                        
                         return (
-                            <PricingCard key={item.title} title={item.title} text={item.text} timing={time} />
+                            <PricingCard key={item.title} title={item.title} text={item.text} timing={i} />
                         )
                     })}
             </div>
