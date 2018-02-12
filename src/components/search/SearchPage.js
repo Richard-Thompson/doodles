@@ -45,7 +45,7 @@ class SearchPage extends Component {
                     </div>
                     <ReactCSSTransitionGroup transitionName="buttons" transitionEnterTimeout={700} transitionLeaveTimeout={700}>
                         {this.state.showOptions ?
-                            <div className='search-options-wrapper'>
+                            <div key='hello' className='search-options-wrapper'>
                                 <SearchButton 
                                  wrapper={'search-type-wrapper'}
                                  onClick={this.onClickTypesHandler}

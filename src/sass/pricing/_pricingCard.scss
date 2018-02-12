@@ -1,0 +1,32 @@
+.pricing-card-wrapper {
+    .pricing-card {
+        border-radius: 15px;
+        border: 1px solid #949494;
+        padding: 20px;
+        margin: 10px 0 10px 0;
+        opacity:0;
+        transition: all 2s ease-in-out;
+        .pricing-card-title {
+            color: #949494;
+        }
+        .pricing-card-text {
+            color: #949494;
+        }
+    }
+}
+.pricing-card-wrapper.appear{
+    .pricing-card {
+        border-radius: 15px;
+        border: 1px solid #949494;
+        padding: 20px;
+        margin: 10px 0 10px 0;
+        opacity:1;
+        .pricing-card-title {
+            color: #949494;
+        }
+        .pricing-card-text {
+            color: #949494;
+        }
+    }
+    
+}
