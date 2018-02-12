@@ -1,9 +1,10 @@
 .search-page-wrapper {
-    max-width: 1400px;
+    width:80%;
+    min-height:75vh;
     margin: 0 auto;
     .search-section {
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
         h1 {
             color: #949494;
             margin: 0 auto;
@@ -89,7 +90,7 @@
         }
     }
     .search-results {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         height: auto;
         border: 2px solid green;

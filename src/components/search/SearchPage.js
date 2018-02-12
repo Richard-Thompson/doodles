@@ -31,6 +31,7 @@ class SearchPage extends Component {
     render() {
         return (
             <section className='search-page-wrapper'>
+            <div className='navbar-background'></div>
             {/* section where all the search capabilities lye*/}
                 <div className='search-section'>
                     <h1>Search Page.</h1>

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Hero from './Hero';
-import Nav from '../nav/Nav';
 import Card from './Card';
 import ShoppingCart from '../../svg/shopping-cart';
 import Notes from '../../svg/notes'; 
@@ -9,7 +8,6 @@ import Blog from '../../svg/blog';
 import Links from '../../svg/links';
 import QuestionAndAnswer from '../../svg/q&a';
 import Explore from './Explore';
-import Footer from '../footer/Footer';
 
 class Home extends Component {
     constructor(props){
@@ -21,7 +19,6 @@ class Home extends Component {
     render () {
         return(
             <div className='home transition-item'>
-                <Nav />
                 <Hero handleClick={this.handleClick}/>
                 <div ref={node => this.something = node}> This is home </div>
                 <div className='card-section container'>
@@ -35,7 +32,6 @@ class Home extends Component {
                     </div>
                 </div>
                 <Explore />
-                <Footer />
             </div>
         )
     }

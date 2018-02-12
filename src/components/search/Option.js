@@ -14,7 +14,7 @@ class Option extends Component {
 
     render () {
         return (
-            <li className={this.state.active ? 'active' : 'type-option'} onClick={this.isActive}>
+            <li className={this.state.active ? 'active-option' : 'type-option'} onClick={this.isActive}>
                 {this.props.option}
             </li>
         )
