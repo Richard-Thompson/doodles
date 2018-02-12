@@ -8,7 +8,6 @@ class PricingPage extends Component {
 
         this.state = {
             pricingContent: [{ title: 'Abstract Art Pricing', text: `Each piece of artwork is individually priced. I base this on how much work and effort I put into the picture, basically I'm just using my own criteria.` },
-            { title: '2Abstract Art Pricing', text: `Each piece of artwork is individually priced. I base this on how much work and effort I put into the picture, basically I'm just using my own criteria.` },
             { title: 'Abstract Art Postage and Packaging', text: `Postage & packing is set at £2.50 with 50 pence for each additional picture.Exchange rates will be calculated, depending on currencies used for payment. There will be no extras added to that part of the pricing.` },
             { title: 'Abstract Art Commissions - Custom Abstract Art', text: `Commissions will be undertaken upon an agreed upon price. This agreed price will include postage and packaging. If you require an odd size of picture, that will have be taken into account as regards posting and Packaging and will probably be more than the above price for the standard two sizes of A4 and A3.` },
             { title: 'Abstract Art Insurance', text: `Insurance - Within the UK I can insure pictures for up to £250 for £3.50 outside the UK I'm looking into the possibility, however for the moment it is not possible. You must contact me before buying a picture to require insurance. The size of the picture does not matter as regards insurance.` },
