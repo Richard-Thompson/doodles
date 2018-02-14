@@ -6,6 +6,7 @@ import Nav from './components/nav/Nav';
 import Footer from './components/footer/Footer';
 import PricingPage from './components/pricing/PricingPage';
 import AboutPage from './components/about/AboutPage';
+import BlogPage from './components/blog/BlogPage';
 
 // smoothscroll-polyfill is to allow me to use scrollIntoView on elements grabbed from the dom
 import { polyfill } from 'smoothscroll-polyfill';
@@ -25,6 +26,7 @@ class App extends Component {
                         <Route path='/explore' component={SearchPage} />
                         <Route path='/pricing' component={PricingPage} />
                         <Route path='/about' component={AboutPage} />
+                        <Route path='/blog' component={BlogPage} />
                     </Switch>
                     <Footer />
                 </div>
