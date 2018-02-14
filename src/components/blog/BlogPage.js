@@ -1,7 +1,15 @@
 import React, {Component} from 'react';
 import LargestCard from './LargestCard';
+import {connect} from 'react-redux';
+import {getAllArticles} from '../../actions/blog.actions';
 
 class BlogPage extends Component {
+    constructor(props) {
+        super(props);
+    }
+    componentDidMount () {
+        this.props.getAllArticles();
+    }
     render () {
         return (
             <section className='blog-page-wrapper'>
@@ -22,4 +30,18 @@ class BlogPage extends Component {
     }
 }
 
-export default BlogPage;
+function mapStateToProps (state) {
+    return {
+        articles: state.blogReducer.articles
+    }
+}
+
+function mapDispatchToProps (dispatch) {
+    return {
+        getAllArticles: () => {
+            dispatch(getAllArticles());
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BlogPage);
