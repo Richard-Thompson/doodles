@@ -14,7 +14,6 @@ class PricingCard extends Component {
     render () {
         let styles={
             transitionDelay:`${this.props.timing}ms`,
-            transform:`${this.props.timing % 2 === 0 ? 'translateX(150px)' : 'translateX(-150px)'}`
         }
         return (
             <OnVisible className='pricing-card-wrapper'>

@@ -9,9 +9,12 @@ setDefaultProps({
 
 class AboutCard extends Component {
     render () {
+        let styles = {
+            transitionDelay: `${this.props.timing*100}ms`
+        }
         return(
             <OnVisible className='about-content'>
-                <p className='about-card'>
+                <p className='about-card' style={styles}>
                     {this.props.text}
                 </p>
             </OnVisible>

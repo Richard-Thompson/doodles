@@ -1,7 +1,7 @@
 .about-content{
     .about-card{
         opacity:0;
-        transform: translateX(-150px);
+        transform: translateY(-50px);
         transition: all 2s ease-in-out;
     }
 }
@@ -9,6 +9,6 @@
 .about-content.appear{
     .about-card{
         opacity:1;
-        transform:translateX(0)
+        transform:translateY(0)
     }
 }

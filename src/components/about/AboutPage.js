@@ -19,7 +19,7 @@ class AboutPage extends Component {
                 <h1 className='about-title'>About Abstract Art Artist Tina Clarke</h1>
                 {this.state.content.map((text, i) => {
                     return(
-                        <AboutCard text={text} key={i} />
+                        <AboutCard text={text} key={i} timing={i}/>
                     )
                 })}
                 <h2 className='acknowledgements'>Acknowledgements</h2>
