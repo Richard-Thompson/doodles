@@ -40,7 +40,7 @@ describe('doodles.reducer', function () {
     expect(actual).to.not.equal(initialState);
   });
 
-  it('handles GET_ALL_DOODLES_REQUEST', function () {
+  it('handles GET_ALL_DOODLES_ERROR', function () {
     const action = actions.getAllDoodlesError('error');
     const initialState = {
       loading: true,

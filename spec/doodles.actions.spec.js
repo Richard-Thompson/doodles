@@ -1,8 +1,9 @@
+/* eslint-env node, mocha, chai */
 import * as actions from '../src/actions/doodles.actions';
 import * as types from '../src/types/doodles.types';
 import {expect} from 'chai'; 
 
-describe('actions', () => {
+describe('doodles actions', () => {
     describe('getAllDoodles', () => {
         it('Request: returns the expected action', () => {
             const action = actions.getAllDoodlesRequest();
