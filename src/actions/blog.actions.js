@@ -37,10 +37,10 @@ export function getAllArticlesError (error) {
 export function getArticle (articleId) {
     return function (dispatch) {
         dispatch(getArticleRequest())
-        client.getEntry(articleId)
+        client.getEntries({'sys.id':`${articleId}`,include:1})
             .then((article) =>{
                 console.log(article)
-                dispatch(getArticleSuccess(article.fields));
+                dispatch(getArticleSuccess(article.items[0].fields));
             })
             .catch((error) => {
                 dispatch(getArticleError(error));
