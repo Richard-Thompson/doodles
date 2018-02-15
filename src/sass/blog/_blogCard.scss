@@ -1,3 +1,5 @@
+.article-link{
+    display: flex;
 .xl-blog-card{
     // min-height:520px;
     display: flex;
@@ -23,11 +25,12 @@
             padding: 10px 10px 0 10px;
             color:#292929;
             display: flex;
-            flex-grow: 1;
         }
         .xl-description{
             color:#949494;
             padding:0 10px 0 10px;
+            flex-grow: 1;
+            display: flex;
         }
         .xl-publisher{
             display: flex;
@@ -51,4 +54,5 @@
             }
         }
     }
+}
 }
