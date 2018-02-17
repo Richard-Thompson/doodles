@@ -15,7 +15,7 @@ class BlogCard extends Component {
             <div className='xl-blog-card'>
                 <div className='xl-img' style={styles}></div>
                 <div className='xl-details'>
-                    <h3 className='xl-title'><strong>{article.blogTitle}</strong></h3>
+                    <h3 className='xl-title'><strong>{article.articleTitle}</strong></h3>
                     <div className='xl-description'>{article.description}</div>
                     <div className='xl-publisher'>
                         <img src={article.authorImage.fields.file.url} />

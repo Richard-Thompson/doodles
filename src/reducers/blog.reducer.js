@@ -22,7 +22,7 @@ export default function blogReducer (state=initialState, action) {
         return {...state, loading: true}
 
         case types.GET_ARTICLE_SUCCESS :
-        return {...state,loading:false, article:action.article}    
+        return {...state,loading:false,article: action.article}
         
         case types.GET_ARTICLE_ERROR :
         return {...state, loading:false, error: action.error}
