@@ -24,6 +24,10 @@
             @media(max-width:650px){
                 width:100%;
             }
+            .doodle-title{
+                color:$title-color;
+                font-size: $title-size-2;
+            }
         }
     
 }

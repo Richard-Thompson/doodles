@@ -12,7 +12,7 @@ class DoodleCard extends Component {
             backgroundImage:`url(https:${doodle.image.fields.file.url})`,
             backgroundPosition: '50%',
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'auto',
+            backgroundSize: 'contain',
             transition: 'all .3s ease-in-out',
             overflow: 'hidden',
             height:'300px',
