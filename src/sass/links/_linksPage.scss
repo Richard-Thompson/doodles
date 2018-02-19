@@ -1,0 +1,13 @@
+@import 'variables';
+.links-page-wrapper{
+    min-height: $wrapper-height;
+    width: $width;
+    margin:0 auto;
+    .links-title{
+        color: $title-color;
+        font-size: $title-size-1;
+    }
+    .links-wrapper{
+        margin-bottom:20px;
+    }
+}

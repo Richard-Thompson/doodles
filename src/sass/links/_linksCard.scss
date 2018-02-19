@@ -1,0 +1,53 @@
+@import 'variables';
+.link-card-outer {
+    position: relative;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    height: 0;
+    padding-bottom: 30%;
+    &:hover .link-card-inner {
+        transform: scale(1.1);
+    }
+    @media (max-width: 576px) {
+        padding-bottom: 50%;
+    }
+    .link-card-inner {
+        position: relative;
+        height: 0;
+        padding-bottom: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transition: all 1s ease-in-out;
+        .link-overlay {
+            background-color: rgba($color: #000000, $alpha: 0.7);
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .link-details {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: table;
+            left:0;
+            top:0;
+            
+            a {
+                position: relative;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                padding: 0 10px 0 10px;
+                color: white;
+                z-index: 11;
+                cursor: pointer;
+            }
+        }
+    }
+}
