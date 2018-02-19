@@ -1,3 +1,4 @@
+@import 'variables';
 .article-link{
     display: flex;
 .xl-blog-card{
@@ -16,18 +17,18 @@
     }
     .xl-details{
         width:100%;
-        border:1px solid rgb(163, 161, 161);
+        border:1px solid $border-color;
         display: flex;
         flex-direction: column;
         flex:auto;
         .xl-title{
-            font-size: 1rem;
+            font-size: $title-size-2;
             padding: 10px 10px 0 10px;
-            color:#292929;
+            color:$title-color;
             display: flex;
         }
         .xl-description{
-            color:#949494;
+            color:$text-color;
             padding:0 10px 0 10px;
             flex-grow: 1;
             display: flex;
@@ -44,11 +45,11 @@
             .xl-publisher-details{
                 padding-left:10px;
                 .xl-publisher-name{
-                    color:#949494;
+                    color:$author-color;
                     font-size: 0.8rem;
                 }
                 .xl-publisher-date{
-                    color:#949494;
+                    color:$details-color;
                     font-size: 0.8rem;
                 }
             }

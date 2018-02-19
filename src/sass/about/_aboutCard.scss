@@ -1,8 +1,11 @@
+@import 'variables';
 .about-content{
     .about-card{
         opacity:0;
-        transform: translateY(-50px);
+        transform: $fly-in-text;
         transition: all 2s ease-in-out;
+        color:$text-color;
+        font-size: $text-size;
     }
 }
 

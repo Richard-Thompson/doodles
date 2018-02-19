@@ -1,3 +1,4 @@
+@import 'variables';
 .article-page-wrapper{
     .article-details{
         display: flex;
@@ -7,7 +8,7 @@
         margin:0 auto;
         margin-top:40px;
         padding-top:40px;
-        border-top: 1px solid #949494;
+        border-top: 1px solid $border-color;
         img{
             border-radius: 50%;
             width: 60px;
@@ -17,11 +18,11 @@
             margin-left:20px;
             .details{
                 &:first-child{
-                    color:#5E5E5E;
+                    color:$author-color;
                 }
                 margin:0;
                 font-size: 0.9rem;
-                color: #949494
+                color: $details-color;
             }
         }
     }

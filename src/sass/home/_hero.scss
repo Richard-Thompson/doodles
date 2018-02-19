@@ -1,16 +1,6 @@
+@import 'variables';
 .hero-wrapper{
     height:88vh;
-    // .hero-img{
-    //     background: url('https://thumb1.shutterstock.com/display_pic_with_logo/1943648/523654960/stock-vector-vector-patchwork-pattern-vintage-decorative-elements-hand-drawn-background-indian-arabic-523654960.jpg');//http://4.bp.blogspot.com/-xhG0CP5zmDY/UEtz5UfV_eI/AAAAAAAAC_E/sY3CfYsgObs/s1600/Street+Wall+Art.jpg
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    //     position: absolute;
-    //     top:0;
-    //     right:0;
-    //     left:0;
-    //     z-index:-10;
-    //     height:100vh;
-    // }
     .overlay{
         position: absolute;
         top: 0;
@@ -43,7 +33,7 @@
         position: absolute;
         top:38%;
         left:10vw;
-        color: white;
+        color: $home-text-color;
         font-size: 2rem;
     }
     .search-box{
@@ -73,7 +63,7 @@
         }
         .search-button{
             background-color: rgba(0,0,0,0.6);
-            color:white;
+            color:$home-text-color;
             border:none;
             width:15%;
             height:4rem;
@@ -81,7 +71,7 @@
     }
     .down-arrows-wrapper{
         #down-arrow{
-            fill:white;
+            fill:$home-text-color;
             width:50px;
             height:50px;
             position: absolute;

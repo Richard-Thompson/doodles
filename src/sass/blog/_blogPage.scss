@@ -1,11 +1,14 @@
+@import 'variables';
 .blog-page-wrapper{
-    min-height: 75vh;
+    min-height: $wrapper-height;
     .articles{
-        max-width: 80%;
+        width: $width;
+        padding:0 !important;
         margin:0 auto;
         padding:10px;
         .articles-title{
-            color:#292929;
+            font-size: $title-size-1;
+            color:$title-color;
         }
     }
 }

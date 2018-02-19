@@ -1,19 +1,20 @@
+@import 'variables';
 .navbar{
     background-color: transparent !important;
     text-align: center;
-    width:80%;
+    width:$width;
     padding:10px 0 10px 0;
     margin-left:10vw;
     height:10vh;
         .navbar-brand{
-            color:white;
+            color:$home-text-color;
             font-size: 1.5rem;
         }
         .navbar-toggler{
-            color:white;
+            color:$home-text-color;
             .navbar-toggler-icon{
-                color:white;
-                background-color: white;
+                color:$home-text-color;
+                background-color: $home-text-color;
             }
         }
         .collapse.navbar-collapse{
@@ -23,7 +24,7 @@
                     .nav-link{
                         cursor: pointer;
                         font-size: 1rem;
-                        color:white;    
+                        color:$home-text-color;    
                     }
                 }
                 .nav-item:last-child{
@@ -35,7 +36,7 @@
 }
 
 .navbar-background{
-    background-color: black;
+    background-color: $background-color;
     width:100%;
     height:10vh;
     position: absolute;

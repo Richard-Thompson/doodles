@@ -1,9 +1,10 @@
+@import 'variables';
 .pricing-page-wrapper {
-    min-height: 75vh;
-    width: 80%;
+    min-height: $wrapper-height;
+    width: $width;
     margin: 0 auto;
     .pricing-title {
-        color: #949494;
+        color: $title-color;
     }
     .pricing-appear {
         transform: translate3d(-100px,0,0);

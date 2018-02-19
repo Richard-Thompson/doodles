@@ -1,15 +1,16 @@
+@import 'variables';
 .pricing-card-wrapper {
     .pricing-card {
         padding: 20px 0 20px 0;
         margin: 10px 0 10px 0;
         opacity: 0;
-        transform: translateY(-50px);
+        transform: $fly-in-text;
         transition: all 2s ease-in-out;
         .pricing-card-title {
-            color: #949494;
+            color: $title-color;
         }
         .pricing-card-text {
-            color: #949494;
+            color: $text-color;
         }
     }
 }
@@ -21,10 +22,10 @@
         opacity: 1;
         transform: translateY(0);
         .pricing-card-title {
-            color: #949494;
+            color: $title-color;
         }
         .pricing-card-text {
-            color: #949494;
+            color: $text-color;
         }
         &:hover {
             transform: scale(1.1)

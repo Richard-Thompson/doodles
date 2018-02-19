@@ -1,16 +1,20 @@
+@import 'variables';
 .about-page-wrapper {
-    min-height: 75vh;
-    width: 80%;
+    min-height: $wrapper-height;
+    width: $width;
     margin: 0 auto;
     .about-title {
         margin: 20px 0 40px 0;
-        color: grey;
+        color: $title-color;
+        font-size:$title-size-1;
     }
     .acknowledgements{
-
+        color: $title-color;
+        font-size: $title-size-1;
     }
     .acknowledgements-text{
-
+        color: $text-color;
+        font-size: $text-size;
     }
 }
  

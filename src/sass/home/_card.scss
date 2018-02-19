@@ -1,3 +1,4 @@
+@import 'variables';
 .box {
     vertical-align: top;
     margin:0px 30px 60px 0;
@@ -53,7 +54,7 @@
                     position: relative;
                     width:150px;
                     height:150px;
-                    border:2px solid #949494;
+                    border:2px solid $border-color;
                     border-radius: 50%;
                     
                     .circle-1{
@@ -63,10 +64,10 @@
                         margin: -69px 0 0 -69px;
                         width:138px;
                         height:138px;
-                        border:3px solid #949494;
+                        border:3px solid $border-color;
                         border-radius: 50%;
                         svg {
-                            fill:#949494;
+                            fill: $border-color;
                             position: absolute;
                             left:0;
                             right:0;
@@ -75,7 +76,7 @@
                             height:50%;
                             width:50%;
                             line{
-                                stroke:#949494;
+                                stroke: $border-color;
                             }
                         }
                     }
@@ -91,12 +92,12 @@
                 .icon-title{
                     font-size: 1.75rem;
                     margin-top:10px;
-                    color:#949494;
+                    color:$title-color;
                 }
                 .icon-sentence{
                     font-size: 1rem;
                     margin: 0 10px;
-                    color:#949494;
+                    color: $text-color;
                     @media (max-width:1080px){
                         min-width:200px;
                     }

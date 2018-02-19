@@ -1,12 +1,13 @@
+@import 'variables';
 .search-page-wrapper {
-    width:80%;
-    min-height:75vh;
+    width:$width;
+    min-height:$wrapper-height;
     margin: 0 auto;
     .search-section {
         margin: 0 auto;
         width: 100%;
         h1 {
-            color: #949494;
+            color: $title-color;
             margin: 0 auto;
             margin-bottom: 1rem;
         }
@@ -14,9 +15,10 @@
             margin: 0 auto;
             margin-bottom: 1rem;
             input {
+                color:$text-color;
                 width: 100%;
                 height: 50px;
-                font-size: 1.5rem;
+                font-size: $title-size-2;
                 background-color: #f0eeee;
                 border: none;
             }
@@ -24,8 +26,8 @@
         .lines-seperator {
             height: 36px;
             margin: 0 auto;
-            border-top: 1px solid #949494;
-            border-bottom: 1px solid #949494;
+            border-top: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
             display: flex;
             justify-content: center;
             position: relative;
@@ -39,7 +41,7 @@
                 justify-content: center;
                 transition: all 0.5s linear;
                 .fa-chevron-circle-down {
-                    color: #949494;
+                    color: $border-color;
                     font-size: 2rem;
                 }
             }
@@ -93,6 +95,6 @@
         width: 100%;
         margin: 0 auto;
         height: auto;
-        border: 2px solid green;
+        // border: 2px solid green;
     }
 }
