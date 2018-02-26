@@ -19,7 +19,7 @@ describe('blog.reducer', function () {
   });
 
   it('handles GET_ALL_ARTICLES_SUCCESS', function () {
-    const action = actions.getAllArticlesSuccess('articles');
+    const action = actions.getAllArticlesSuccess({items:['articles']});
     const initialState = {
         loading: true,
         error:null,
@@ -31,7 +31,7 @@ describe('blog.reducer', function () {
     const expected = {
         loading: false,
         error:null,
-        articles:'articles',
+        articles:['articles'],
         article: [],
     };
     expect(actual).to.deep.equal(expected);
