@@ -1,7 +1,7 @@
 /* eslint-env node, mocha, chai */
 import * as actions from '../src/actions/doodles.actions';
 import * as types from '../src/types/doodles.types';
-import {expect} from 'chai'; 
+import { expect } from 'chai';
 
 describe('doodles actions', () => {
     describe('getAllDoodles', () => {
@@ -52,6 +52,15 @@ describe('doodles actions', () => {
             expect(action).to.eql({
                 type: types.DATE_BOOLEAN_SEARCH_CRITERIA,
                 criteria: 'Newest'
+            })
+        })
+    });
+    describe('addHomePageSearchTerm', () => {
+        it('addHomePageSearchTerm returns the expected action', () => {
+            const action = actions.addHomePageSearchTerm('flowers')
+            expect(action).to.eql({
+                type: types.ADD_HOME_PAGE_SEARCH_TERM,
+                searchTerm: 'flowers'
             })
         })
     });
