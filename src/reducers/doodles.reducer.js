@@ -8,7 +8,8 @@ const initialState ={
     doodle:[],
     searchCriteria:[],
     sold: false,
-    date: 'Newest'
+    date: 'Newest',
+    homePageSearchTerm:''
 }
 
 export default function doodlesReducer (state = initialState, action) {
@@ -30,6 +31,9 @@ export default function doodlesReducer (state = initialState, action) {
 
         case types.DATE_BOOLEAN_SEARCH_CRITERIA :
         return date(state, action)
+
+        case types.ADD_HOME_PAGE_SEARCH_TERM :
+        return {...state, homePageSearchTerm: action.searchTerm}
 
         default :
         return state

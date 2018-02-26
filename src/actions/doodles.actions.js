@@ -1,5 +1,6 @@
 import * as types from '../types/doodles.types';
 import client from '../contenful';
+import { ADD_HOME_PAGE_SEARCH_TERM } from '../types/doodles.types';
 
 export function getAllDoodles () {
     return function (dispatch) {
@@ -52,5 +53,12 @@ export function addDateCriteria (date) {
     return {
         type:types.DATE_BOOLEAN_SEARCH_CRITERIA,
         criteria: date
+    }
+}
+
+export function addHomePageSearchTerm (searchTerm) {
+    return {
+        type: ADD_HOME_PAGE_SEARCH_TERM,
+        searchTerm: searchTerm
     }
 }

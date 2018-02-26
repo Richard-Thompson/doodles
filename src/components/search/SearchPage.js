@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SearchButton from './SearchButton';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {connect} from 'react-redux';
-import {getAllDoodles} from '../../actions/doodles.actions';
+import {getAllDoodles, addHomePageSearchTerm} from '../../actions/doodles.actions';
 import DoodleList from './DoodleList';
 
 class SearchPage extends Component {
@@ -17,7 +17,7 @@ class SearchPage extends Component {
             dates:['Newest', 'Oldest'],
             showSold: false,
             sold:['For Sale','Sold'],
-            searchTerm:''
+            searchTerm:'' || this.props.homePageSearchTerm
         }
         this.onClickArrowHandler = this.onClickArrowHandler.bind(this);
         this.onClickTypesHandler = this.onClickTypesHandler.bind(this);
@@ -27,6 +27,9 @@ class SearchPage extends Component {
     }
     componentDidMount () {
         this.props.getAllDoodles();
+    }
+    componentWillUnmount () {
+        this.props.addHomePageSearchTerm('');
     }
     render() {
         return (
@@ -117,7 +120,8 @@ class SearchPage extends Component {
 function mapStateToProps (state) {
     return {
         doodles: state.doodlesReducer.doodles,
-        searchCriteria: state.doodlesReducer.searchCriteria
+        searchCriteria: state.doodlesReducer.searchCriteria,
+        homePageSearchTerm: state.doodlesReducer.homePageSearchTerm
     }
 } 
 
@@ -125,6 +129,9 @@ function mapDispatchToProps (dispatch) {
     return {
         getAllDoodles: () => {
             dispatch(getAllDoodles());
+        },
+        addHomePageSearchTerm: (searchTerm) => {
+            dispatch(addHomePageSearchTerm(searchTerm));
         }
     }
 }
