@@ -84,5 +84,18 @@ describe('doodles.reducer', function () {
     expect(actual).to.not.equal(initialState);
   });
 
+  it('handles ADD_HOME_PAGE_SEARCH_TERM', function () {
+    const action = actions.addHomePageSearchTerm('flowers');
+    const initialState = {
+      homePageSearchTerm:''
+    };
+
+    const actual = doodlesReducer(initialState, action);
+    const expected = {
+      homePageSearchTerm:'flowers'
+    };
+    expect(actual).to.eql(expected);
+    expect(actual).to.not.equal(initialState);
+  });
 
 });
