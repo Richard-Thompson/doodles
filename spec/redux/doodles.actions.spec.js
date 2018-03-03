@@ -1,6 +1,6 @@
 /* eslint-env node, mocha, chai */
-import * as actions from '../src/actions/doodles.actions';
-import * as types from '../src/types/doodles.types';
+import * as actions from '../../src/actions/doodles.actions';
+import * as types from '../../src/types/doodles.types';
 import { expect } from 'chai';
 
 describe('doodles actions', () => {

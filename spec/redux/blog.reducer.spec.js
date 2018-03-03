@@ -1,6 +1,6 @@
 /* eslint-env node, mocha, chai */
-import * as actions from '../src/actions/blog.actions';
-import blogReducer from '../src/reducers/blog.reducer';
+import * as actions from '../../src/actions/blog.actions';
+import blogReducer from '../../src/reducers/blog.reducer';
 import { expect } from 'chai';
 
 describe('blog.reducer', function () {

@@ -1,6 +1,6 @@
 /* eslint-env node, mocha, chai */
-import * as actions from '../src/actions/blog.actions';
-import * as types from '../src/types/blog.types';
+import * as actions from '../../src/actions/blog.actions';
+import * as types from '../../src/types/blog.types';
 import {expect} from 'chai'; 
 
 describe('blog actions', () => {

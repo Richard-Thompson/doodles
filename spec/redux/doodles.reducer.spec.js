@@ -1,6 +1,6 @@
 /* eslint-env node, mocha, chai */
-import * as actions from '../src/actions/doodles.actions';
-import doodlesReducer from '../src/reducers/doodles.reducer';
+import * as actions from '../../src/actions/doodles.actions';
+import doodlesReducer from '../../src/reducers/doodles.reducer';
 import { expect } from 'chai';
 
 describe('doodles.reducer', function () {

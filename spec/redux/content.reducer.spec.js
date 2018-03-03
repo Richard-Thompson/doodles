@@ -1,5 +1,5 @@
-import * as actions from '../src/actions/content.actions';
-import contentReducer from '../src/reducers/content.reducer';
+import * as actions from '../../src/actions/content.actions';
+import contentReducer from '../../src/reducers/content.reducer';
 import { expect } from 'chai';
 
 describe('content.reducer', function () {
